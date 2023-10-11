@@ -12,10 +12,11 @@ const Section = styled.div`
 const Container = styled.div`
 	height: 100vh;
 	scroll-snap-align: center;
-	width: 1000px;
+	/* width: 1000px; */
 	display: flex;
 	justify-content: space-between;
 	gap: 30px;
+	padding: 40px;
 `;
 
 const Left = styled.div`
@@ -33,25 +34,24 @@ const WhatIDo = styled.div`
 `;
 
 const Title = styled.h1`
-	/* font-size: 32px; */
+	font-size: 25px;
+	font-weight: 400;
 `;
 
-const Line = styled.img`
-	height: 5px;
+const Subtitle = styled.h2`
+	font-size: 20px;
+	font-weight: 300;
 `;
 
-const Subtitle = styled.h2``;
-
-const Description = styled.p``;
+const Description = styled.p`
+	font-size: small;
+	font-weight: 300;
+	text-align: justify;
+`;
 
 const Button = styled.button`
 	background: rgb(218, 165, 32);
-	background: linear-gradient(
-		90deg,
-		rgba(218, 165, 32, 1) 0%,
-		rgba(242, 215, 31, 1) 35%,
-		rgba(237, 149, 26, 1) 100%
-	);
+	background: linear-gradient(90deg, #803776 0%, #51225f 35%, #803776 100%);
 	font-weight: 500;
 	width: 100px;
 	padding: 10px;
@@ -64,9 +64,10 @@ const Right = styled.div`
 	flex: 4;
 	position: relative;
 `;
+
 const Img = styled.img`
-	width: 600px;
-	height: 400px;
+	width: 450px;
+	height: 350px;
 	object-fit: scale-down;
 	position: absolute;
 	top: 0;
@@ -74,7 +75,7 @@ const Img = styled.img`
 	left: 0;
 	right: 0;
 	margin: auto;
-	animation: animate 2s infinite ease alternate;
+	animation: animate 2s infinite ease-out alternate;
 
 	@keyframes animate {
 		100% {
@@ -89,17 +90,31 @@ const Hero = () => {
 			<Navbar />
 			<Container>
 				<Left>
-					<Title>Envision! Focus! Design! Develop! Build!</Title>
+					<Title>Mukulembeze P. Wilfred</Title>
 					<WhatIDo>
-						<Line src="./img/line.png" />
-						<Subtitle>Mukulembeze P. Wilfred</Subtitle>
+						<Subtitle>Envision! Focus! Design! Develop! Build!</Subtitle>
 					</WhatIDo>
-					<Description>Create a piece here!</Description>
-					<Button>More</Button>
+					<Description>
+						I am an avid learner and a proficient software developer with five years
+						of experience in MERN full-stack development. I am keen on delivering
+						exceptional user experiences, prioritizing scalability and performance,
+						emphasizing security measures, and upholding the highest standards of code
+						quality and maintainability. Additionally, I excel in agile development
+						practices and thrive in collaborative team environments."
+					</Description>
+					<Description>
+						Working on teams has been a delight. I like to fan aflame a
+						growth-oriented mindset within the team, encouraging a culture of
+						continuous learning, innovation, and collaboration, where each member
+						takes ownership of their work, seeks excellence in problem-solving, and
+						adapts swiftly to evolving technologies and challenges to achieve peak
+						performance.
+					</Description>
+					{/* <Button>More</Button> */}
 				</Left>
 				<Right>
 					{/* 3d model */}
-					<Img src="./img/moon.png" />
+					<Img src="./img/skills.png" />
 				</Right>
 			</Container>
 		</Section>
