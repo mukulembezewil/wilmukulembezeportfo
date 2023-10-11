@@ -6,7 +6,8 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-	width: 1000px;
+	position: fixed;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -34,7 +35,8 @@ const List = styled.ul`
 	list-style: none;
 	padding-top: 42px;
 	padding-left: 75px;
-	color: #504e4e;
+	color: #8a8888;
+	font-size: 14px;
 `;
 
 const ListItem = styled.li`
@@ -51,13 +53,14 @@ const Button = styled.button`
 	margin-top: 20px;
 	width: 100px;
 	height: 30px;
-	background: rgb(218, 165, 32);
+	background: #5899e2;
+	/* background: rgb(218, 165, 32);
 	background: linear-gradient(
 		90deg,
 		rgba(218, 165, 32, 1) 0%,
 		rgba(242, 215, 31, 1) 35%,
 		rgba(237, 149, 26, 1) 100%
-	);
+	); */
 	border: none;
 	border-radius: 10px 0px 10px 0px;
 	cursor: pointer;
