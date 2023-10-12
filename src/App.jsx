@@ -6,7 +6,7 @@ import Works from './components/Works';
 
 const Container = styled.div`
 	height: 100vh;
-	background-color: #301934;
+	/* background-color: #301934; */
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 	overflow-y: auto;
