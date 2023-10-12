@@ -12,41 +12,48 @@ const Section = styled.div`
 const Container = styled.div`
 	height: 100vh;
 	scroll-snap-align: center;
-	/* width: 1000px; */
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	gap: 30px;
-	padding: 40px;
+	/* padding: 40px; */
+	background: repeating-conic-gradient(
+		rgb(1, 1, 1) 0%,
+		rgb(32, 32, 32) 15%,
+		rgb(15, 15, 15) 33%
+	);
 `;
 
 const Left = styled.div`
-	flex: 3;
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	gap: 20px;
 `;
 const WhatIDo = styled.div`
 	display: flex;
-	align-items: center;
-
+	flex-direction: column;
 	gap: 10px;
 `;
 
 const Title = styled.h1`
-	font-size: 25px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 35px;
 	font-weight: 400;
 `;
 
 const Subtitle = styled.h2`
-	font-size: 20px;
-	font-weight: 300;
+	font-size: 16px;
+	font-weight: 600;
 `;
 
-const Description = styled.p`
-	font-size: small;
+const AboutMe = styled.p`
+	font-size: 14px;
 	font-weight: 300;
-	text-align: justify;
+	cursor: pointer;
 `;
 
 const Button = styled.button`
@@ -61,13 +68,13 @@ const Button = styled.button`
 `;
 
 const Right = styled.div`
-	flex: 4;
+	flex: 1;
 	position: relative;
 `;
 
 const Img = styled.img`
-	width: 450px;
-	height: 350px;
+	width: 350px;
+	/* height: 350px; */
 	object-fit: scale-down;
 	position: absolute;
 	top: 0;
@@ -90,31 +97,17 @@ const Hero = () => {
 			<Navbar />
 			<Container>
 				<Left>
-					<Title>Mukulembeze P. Wilfred</Title>
+					<Title>
+						Mukulembeze P. <br></br>Wilfred
+					</Title>
 					<WhatIDo>
-						<Subtitle>Envision! Focus! Design! Develop! Build!</Subtitle>
+						<Subtitle>ღ Software Developer</Subtitle>
+						<AboutMe>About me...</AboutMe>
 					</WhatIDo>
-					<Description>
-						I am an avid learner and a proficient software developer with five years
-						of experience in MERN full-stack development. I am keen on delivering
-						exceptional user experiences, prioritizing scalability and performance,
-						emphasizing security measures, and upholding the highest standards of code
-						quality and maintainability. Additionally, I excel in agile development
-						practices and thrive in collaborative team environments."
-					</Description>
-					<Description>
-						Working on teams has been a delight. I like to fan aflame a
-						growth-oriented mindset within the team, encouraging a culture of
-						continuous learning, innovation, and collaboration, where each member
-						takes ownership of their work, seeks excellence in problem-solving, and
-						adapts swiftly to evolving technologies and challenges to achieve peak
-						performance.
-					</Description>
-					{/* <Button>More</Button> */}
 				</Left>
 				<Right>
 					{/* 3d model */}
-					<Img src="./img/skills.png" />
+					<Img src="./img/skillset.svg" />
 				</Right>
 			</Container>
 		</Section>
