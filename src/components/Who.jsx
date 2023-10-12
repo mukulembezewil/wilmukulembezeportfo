@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import React, { useState } from 'react';
 
 const Section = styled.div`
 	height: 100vh;
@@ -15,6 +16,7 @@ const Container = styled.div`
 	display: flex;
 	justify-content: space-between;
 	gap: 30px;
+	color: #808080;
 `;
 
 const Left = styled.div`
@@ -39,9 +41,21 @@ const Line = styled.img`
 	height: 5px;
 `;
 
-const Subtitle = styled.h2``;
+const Description = styled.p`
+	font-size: small;
+	font-weight: 300;
+	text-align: justify;
+`;
 
-const Description = styled.p``;
+const MoreAboutMe = styled.div`
+	font-size: small;
+	font-weight: 300;
+	text-align: justify;
+	/* display: none; */
+	height: ${(props) => (props.show ? 'auto' : '0')};
+	overflow: hidden;
+	transition: height 0.5s ease-in-out; // Adjust the duration as needed
+`;
 
 const Button = styled.button`
 	background: rgb(218, 165, 32);
@@ -61,17 +75,13 @@ const Button = styled.button`
 
 const Right = styled.div`
 	flex: 4;
-	position: relative;
+	/* position: relative; */
+	display: flex; /* Add display: flex to create a flex container */
+	flex-direction: column; /* Arrange child elements in a column */
 `;
 const Img = styled.img`
 	width: 600px;
-	height: 400px;
 	object-fit: scale-down;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	margin: auto;
 	animation: animate 2s infinite ease alternate;
 
@@ -82,25 +92,80 @@ const Img = styled.img`
 	}
 `;
 
+const QuoteContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 50px;
+`;
+
+const Quote = styled.div`
+	font-size: small;
+	font-weight: 300;
+	font-style: italic;
+	padding: 0 60px 0 60px;
+`;
+
+const ReadButton = styled.button`
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #042a2b;
+	text-decoration: none;
+	font-size: small;
+	font-weight: 300;
+`;
+
 const Who = () => {
+	const [showMore, setShowMore] = useState(false);
+
+	const toggleMore = () => {
+		setShowMore(!showMore);
+	};
+
 	return (
 		<Section>
 			<Container>
 				<Left>
-					<Title>Envision! Focus! Design! Develop! Build!</Title>
+					<Title>About Me</Title>
 					<WhatIDo>
 						<Line src="./img/line.png" />
-						<Subtitle>Mukulembeze P. Wilfred</Subtitle>
 					</WhatIDo>
-					<Description>Create a piece here!</Description>
-					<Button>More</Button>
+					<Description>
+						I am an avid learner and a proficient software developer with five years
+						of experience in MERN full-stack development. I am keen on delivering
+						exceptional user experiences, prioritizing scalability and performance,
+						emphasizing security measures, and upholding the highest standards of code
+						quality and maintainability. Additionally, I excel in agile development
+						practices and thrive in collaborative team environments.
+					</Description>
+					<MoreAboutMe
+						show={showMore}
+						// style={{ display: showMore ? 'block' : 'none' }}
+					>
+						Working on teams has been a delight. I like to fan aflame a
+						growth-oriented mindset within the team, encouraging a culture of
+						continuous learning, innovation, and collaboration, where each member
+						takes ownership of their work, seeks excellence in problem-solving, and
+						adapts swiftly to evolving technologies and challenges to achieve peak
+						performance.
+					</MoreAboutMe>
+					<ReadButton onClick={toggleMore}>
+						{showMore ? 'Read less ▲' : 'Read more ▼'}
+					</ReadButton>
 				</Left>
 				<Right>
-					{/* 3d model */}
-					<Img src="./img/moon.png" />
+					<Img src="./img/house.jpg" />
+					<QuoteContainer>
+						<Quote>
+							"Clear images of definite objectives are the seed ideas of future
+							manifestations."
+						</Quote>
+					</QuoteContainer>
 				</Right>
 			</Container>
 		</Section>
 	);
 };
+
 export default Who;
