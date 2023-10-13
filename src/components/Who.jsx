@@ -80,6 +80,7 @@ const Right = styled.div`
 	flex-direction: column; /* Arrange child elements in a column */
 `;
 const Img = styled.img`
+	position: relative;
 	width: 600px;
 	object-fit: scale-down;
 	margin: auto;
@@ -127,7 +128,7 @@ const Who = () => {
 		<Section>
 			<Container>
 				<Left>
-					<Title>About Me</Title>
+					<Title>Peek Into My World</Title>
 					<WhatIDo>
 						<Line src="./img/line.png" />
 					</WhatIDo>
@@ -151,7 +152,7 @@ const Who = () => {
 						performance.
 					</MoreAboutMe>
 					<ReadButton onClick={toggleMore}>
-						{showMore ? 'Read less ▲' : 'Read more ▼'}
+						{showMore ? "You: I've had enough of this! ▲" : 'Me: More? ▼'}
 					</ReadButton>
 				</Left>
 				<Right>
