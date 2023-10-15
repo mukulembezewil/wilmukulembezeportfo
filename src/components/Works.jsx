@@ -12,7 +12,8 @@ const Section = styled.div`
 const Container = styled.div`
 	height: 100vh;
 	scroll-snap-align: center;
-	width: 1000px;
+	width: 100%;
+	padding-left: 50px;
 	display: flex;
 	justify-content: space-between;
 	gap: 30px;
@@ -27,12 +28,12 @@ const Left = styled.div`
 	display: flex;
 	flex-direction: column;
 	padding-top: 120px;
-	opacity: 0.5;
+	/* opacity: 0.5; */
 	justify-content: start;
 	align-items: center;
 	gap: 20px;
-	background-image: url('./img/sample2.avif');
-	background-size: contain;
+	background-image: url('./img/molecule1.jpg');
+	background-size: 80%;
 	background-repeat: no-repeat;
 	background-position: center;
 	@media (max-width: 768px) {
@@ -111,15 +112,24 @@ const SampleItemContainer3 = styled.div`
 `;
 
 const SampleIcon = styled.img`
-	width: 50px;
+	width: 100px;
 	object-fit: scale-down;
 	position: relative;
 	cursor: pointer;
-	animation: animate 3s infinite ease-out alternate;
+	animation: fancy-animate 4s infinite ease-out;
 
-	@keyframes animate {
-		100% {
+	@keyframes fancy-animate {
+		0% {
+			transform: translateY(0px);
+			opacity: 0.5;
+		}
+		50% {
 			transform: translateY(20px);
+			opacity: 0.2;
+		}
+		100% {
+			transform: translateY(0px);
+			opacity: 1;
 		}
 	}
 `;
@@ -147,7 +157,7 @@ const Img = styled.img`
 
 const Works = () => {
 	return (
-		<Section>
+		<Section id="Works">
 			<Container>
 				<Left>
 					<Title>
@@ -172,7 +182,7 @@ const Works = () => {
 						<SampleItemContainer3>
 							<SampleIcon src="./img/chemistry.png" />
 							<SampleTitle>
-								React <br></br>Chat App
+								Video <br></br>Sharing App
 							</SampleTitle>
 						</SampleItemContainer3>
 					</SamplesContainer>
