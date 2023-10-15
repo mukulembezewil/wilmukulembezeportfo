@@ -19,6 +19,16 @@ const Links = styled.div`
 	/* align-items: center; */
 	/* gap: 50px; */
 `;
+const A = styled.a`
+	text-decoration: none;
+	color: #8a8888;
+	transition: color 0.3s ease; /* Add a transition effect for a smooth color change */
+
+	&:hover {
+		color: white; /* Change the color on hover */
+		border-top: solid 3px #241a1a;
+	}
+`;
 
 const Logo = styled.img`
 	width: 120px;
@@ -58,9 +68,15 @@ const Navbar = () => {
 			<Logo src="./img/logo.png" />
 			<Links>
 				<List>
-					<ListItem>Home</ListItem>
-					<ListItem>ReactJS</ListItem>
-					<ListItem>NodeJS</ListItem>
+					<ListItem>
+						<A href="#Hero">Home</A>
+					</ListItem>
+					<ListItem>
+						<A href="#Works">ReactJS</A>
+					</ListItem>
+					<ListItem>
+						<A href="#Nodeworks">NodeJS</A>
+					</ListItem>
 					<ListItem>VueJS</ListItem>
 					<ListItem>JavaScript</ListItem>
 					<ListItem>CSS</ListItem>

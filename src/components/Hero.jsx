@@ -56,6 +56,16 @@ const AboutMe = styled.p`
 	cursor: pointer;
 `;
 
+const A = styled.a`
+	color: #ddc8c4;
+	text-decoration: none;
+	transition: color 0.3s ease; /* Add a transition effect for a smooth color change */
+
+	&:hover {
+		color: #a56b6b; /* Change the color on hover */
+	}
+`;
+
 const Button = styled.button`
 	background: rgb(218, 165, 32);
 	background: linear-gradient(90deg, #803776 0%, #51225f 35%, #803776 100%);
@@ -93,7 +103,7 @@ const Img = styled.img`
 
 const Hero = () => {
 	return (
-		<Section>
+		<Section id="Hero">
 			<Navbar />
 			<Container>
 				<Left>
@@ -102,7 +112,9 @@ const Hero = () => {
 					</Title>
 					<WhatIDo>
 						<Subtitle>ღ Software Developer</Subtitle>
-						<AboutMe>About me...</AboutMe>
+						<AboutMe>
+							<A href="#Who">About me...</A>
+						</AboutMe>
 					</WhatIDo>
 				</Left>
 				<Right>
