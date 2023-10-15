@@ -125,7 +125,7 @@ const Who = () => {
 	};
 
 	return (
-		<Section>
+		<Section id="Who">
 			<Container>
 				<Left>
 					<Title>Peek Into My World</Title>
