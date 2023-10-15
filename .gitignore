@@ -10,7 +10,6 @@ yarn.lock
 themecolor.md
 
 node_modules
-dist
 dist-ssr
 *.local
 
