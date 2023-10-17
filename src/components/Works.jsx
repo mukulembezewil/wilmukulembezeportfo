@@ -155,6 +155,12 @@ const Img = styled.img`
 	}
 `;
 
+const A = styled.a`
+	text-decoration: none;
+	color: #8a8888;
+	transition: color 0.3s ease; /* Add a transition effect for a smooth color change */
+`;
+
 const Works = () => {
 	return (
 		<Section id="Works">
@@ -180,7 +186,9 @@ const Works = () => {
 							</SampleTitle>
 						</SampleItemContainer2>
 						<SampleItemContainer3>
-							<SampleIcon src="./img/chemistry.png" />
+							<A href="https://mukulembezewil.github.io/mernvideosharingApp_UI/">
+								<SampleIcon src="./img/chemistry.png" />
+							</A>
 							<SampleTitle>
 								Video <br></br>Sharing App
 							</SampleTitle>
