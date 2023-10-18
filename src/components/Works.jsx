@@ -136,6 +136,7 @@ const SampleIcon = styled.img`
 const SampleTitle = styled.div`
 	margin-top: 20px;
 	font-size: small;
+	text-align: center;
 `;
 const SampleDescription = styled.div`
 	font-size: small;
@@ -173,25 +174,30 @@ const Works = () => {
 				<Right>
 					<SamplesContainer>
 						<SampleItemContainer1>
-							<SampleIcon src="./img/flask.png" />
-							<SampleTitle>
-								Movie <br></br>library
-							</SampleTitle>
+							<A href="https://mukulembezewil.github.io/my_first_react_app/">
+								<SampleIcon src="./img/flask.png" />
+								<SampleTitle>
+									Movie <br></br>library
+								</SampleTitle>
+							</A>
+							{/* this is the video library app */}
 							<SampleDescription></SampleDescription>
 						</SampleItemContainer1>
 						<SampleItemContainer2>
-							<SampleIcon src="./img/test-tubes.png" />
-							<SampleTitle>
-								About<br></br>GPT-3
-							</SampleTitle>
+							<A href="https://mukulembezewil.github.io/gpt3infosite/">
+								<SampleIcon src="./img/test-tubes.png" />
+								<SampleTitle>
+									About<br></br>GPT-3
+								</SampleTitle>
+							</A>
 						</SampleItemContainer2>
 						<SampleItemContainer3>
 							<A href="https://mukulembezewil.github.io/mernvideosharingApp_UI/">
 								<SampleIcon src="./img/chemistry.png" />
+								<SampleTitle>
+									Video <br></br>Sharing App
+								</SampleTitle>
 							</A>
-							<SampleTitle>
-								Video <br></br>Sharing App
-							</SampleTitle>
 						</SampleItemContainer3>
 					</SamplesContainer>
 				</Right>
