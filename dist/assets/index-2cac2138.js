@@ -402,7 +402,7 @@ Error generating stack: `+o.message+`
 	text-decoration: none;
 	color: #8a8888;
 	transition: color 0.3s ease; /* Add a transition effect for a smooth color change */
-`,y0=()=>P(s0,{id:"Works",children:D(a0,{children:[P(c0,{children:D(f0,{children:["ReactJS ",P("br",{}),"Sample Work"]})}),P(d0,{children:D(p0,{children:[D(h0,{children:[D(Ko,{href:"https://mukulembezewil.github.io/my_first_react_app/",children:[P(Yo,{src:"./img/flask.png"}),D(Go,{children:["Movie ",P("br",{}),"library"]})]}),P(v0,{})]}),P(m0,{children:D(Ko,{href:"https://mukulembezewil.github.io/gpt3infosite/",children:[P(Yo,{src:"./img/test-tubes.png"}),D(Go,{children:["About",P("br",{}),"GPT-3"]})]})}),P(g0,{children:D(Ko,{href:"https://mukulembezewil.github.io/mernvideosharingApp_UI/",children:[P(Yo,{src:"./img/chemistry.png"}),D(Go,{children:["Video ",P("br",{}),"Sharing App"]})]})})]})})]})}),w0=N.div`
+`,y0=()=>P(s0,{id:"Works",children:D(a0,{children:[P(c0,{children:D(f0,{children:["ReactJS ",P("br",{}),"Sample Work"]})}),P(d0,{children:D(p0,{children:[D(h0,{children:[D(Ko,{href:"https://mukulembezewil.github.io/videolibrary/",children:[P(Yo,{src:"./img/flask.png"}),D(Go,{children:["Movie ",P("br",{}),"library"]})]}),P(v0,{})]}),P(m0,{children:D(Ko,{href:"https://mukulembezewil.github.io/gpt3infosite/",children:[P(Yo,{src:"./img/test-tubes.png"}),D(Go,{children:["About",P("br",{}),"GPT-3"]})]})}),P(g0,{children:D(Ko,{href:"https://mukulembezewil.github.io/mernvideosharingApp_UI/",children:[P(Yo,{src:"./img/chemistry.png"}),D(Go,{children:["Video ",P("br",{}),"Sharing App"]})]})})]})})]})}),w0=N.div`
 	background-color: #ffffff;
 	height: 100vh;
 	scroll-snap-align: center;
