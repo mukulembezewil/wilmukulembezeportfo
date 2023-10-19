@@ -1,4 +1,4 @@
-# DEPLOYING THIS APP
+# DEPLOYING THIS APP - Well this might have changed
 When deploying this Vite React App to github pages,
     1. I edited the vite.config.js adding the two properties below;
 
