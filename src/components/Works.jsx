@@ -174,13 +174,12 @@ const Works = () => {
 				<Right>
 					<SamplesContainer>
 						<SampleItemContainer1>
-							<A href="https://mukulembezewil.github.io/my_first_react_app/">
+							<A href="https://mukulembezewil.github.io/videolibrary/">
 								<SampleIcon src="./img/flask.png" />
 								<SampleTitle>
 									Movie <br></br>library
 								</SampleTitle>
 							</A>
-							{/* this is the video library app */}
 							<SampleDescription></SampleDescription>
 						</SampleItemContainer1>
 						<SampleItemContainer2>
