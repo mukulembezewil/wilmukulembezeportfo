@@ -536,7 +536,7 @@ Error generating stack: `+o.message+`
 			transform: translateY(20px);
 		}
 	}
-`;const T0=()=>P(w0,{id:"Nodeworks",children:D(S0,{children:[P(k0,{children:D(x0,{children:["NodeJS ",P("br",{}),"Sample Work"]})}),P(E0,{children:D(C0,{children:[D(_0,{children:[P(Xo,{src:"./img/njs_wk1.png"}),D(Zo,{children:["Movie ",P("br",{}),"library"]}),P(z0,{})]}),D(P0,{children:[P(Xo,{src:"./img/njs_wk2.png"}),D(Zo,{children:["About",P("br",{}),"GPT-3"]})]}),D(N0,{children:[P(Xo,{src:"./img/njs_wk3.png"}),D(Zo,{children:["Video ",P("br",{}),"Sharing App"]})]})]})})]})}),L0=N.div`
+`;const T0=()=>P(w0,{id:"Nodeworks",children:D(S0,{children:[P(k0,{children:D(x0,{children:["NodeJS ",P("br",{}),"Sample Work"]})}),P(E0,{children:D(C0,{children:[D(_0,{children:[P(Xo,{src:"./img/njs_wk1.png"}),D(Zo,{children:["Social ",P("br",{}),"Media App"]}),P(z0,{})]}),D(P0,{children:[P(Xo,{src:"./img/njs_wk2.png"}),D(Zo,{children:["MERN",P("br",{}),"Blog"]})]}),D(N0,{children:[P(Xo,{src:"./img/njs_wk3.png"}),D(Zo,{children:["Fullstack ",P("br",{}),"MERN App"]})]})]})})]})}),L0=N.div`
 	height: 100vh;
 	/* background-color: #301934; */
 	scroll-snap-type: y mandatory;
