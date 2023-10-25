@@ -169,20 +169,20 @@ const Nodeworks = () => {
 						<SampleItemContainer1>
 							<SampleIcon src="./img/njs_wk1.png" />
 							<SampleTitle>
-								Movie <br></br>library
+								Social <br></br>Media App
 							</SampleTitle>
 							<SampleDescription></SampleDescription>
 						</SampleItemContainer1>
 						<SampleItemContainer2>
 							<SampleIcon src="./img/njs_wk2.png" />
 							<SampleTitle>
-								About<br></br>GPT-3
+								MERN<br></br>Blog
 							</SampleTitle>
 						</SampleItemContainer2>
 						<SampleItemContainer3>
 							<SampleIcon src="./img/njs_wk3.png" />
 							<SampleTitle>
-								Video <br></br>Sharing App
+								Fullstack <br></br>MERN App
 							</SampleTitle>
 						</SampleItemContainer3>
 					</SamplesContainer>

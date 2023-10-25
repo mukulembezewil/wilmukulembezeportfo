@@ -65,7 +65,9 @@ const Navbar = () => {
 	return (
 		// <Section>
 		<Container>
-			<Logo src="./img/logo.png" />
+			<A href="#Hero">
+				<Logo src="./img/logo.png" />
+			</A>
 			<Links>
 				<List>
 					<ListItem>
@@ -80,10 +82,14 @@ const Navbar = () => {
 					<ListItem>VueJS</ListItem>
 					<ListItem>JavaScript</ListItem>
 					<ListItem>CSS</ListItem>
-					<ListItem>Contact</ListItem>
+					<ListItem>
+						<A href="#Contact">Contact</A>
+					</ListItem>
 				</List>
 			</Links>
-			<Button>Hire Now</Button>
+			<A href="#Contact">
+				<Button>Hire Now</Button>
+			</A>
 			{/* <Icons></Icons> */}
 		</Container>
 		// </Section>
